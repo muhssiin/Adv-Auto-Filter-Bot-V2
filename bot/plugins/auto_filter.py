@@ -125,16 +125,7 @@ async def auto_filter(bot, update):
                 ]
             )
         
-        return
-
     else:
-        await update.reply_text("No Results Foud For Your Request Please check the spelling of movie. Use Google to get correct spelling." 
-                                ,reply_markup=InlineKeyboardMarkup(
-                                    [
-                                        [InlineKeyboardButton(text="𝚁𝚎𝚚𝚞𝚎𝚜𝚝", url="https://t.me/MCubeMediarequestbot")]
-                                                              ]
-                                                             )
-                                         )
         return # return if no files found for that query
     
 
