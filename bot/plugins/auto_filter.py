@@ -128,10 +128,9 @@ async def auto_filter(bot, update):
     else:
         return # return if no files found for that query
     else:
+        await update.reply_text("𝙽𝙾 𝚁𝚎𝚜𝚞𝚕𝚝 𝙵𝚘𝚞𝚗𝚍 𝚈𝚘𝚞𝚛 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 \n𝑷𝒍𝒆𝒂𝒔𝒆 𝒄𝒉𝒆𝒄𝒌 𝒕𝒉𝒆 𝒔𝒑𝒆𝒍𝒍𝒊𝒏𝒈 𝒐𝒇 𝒎𝒐𝒗𝒊𝒆. 𝑼𝒔𝒆 𝑮𝒐𝒐𝒈𝒍𝒆 𝒕𝒐 𝒈𝒆𝒕 𝒄𝒐𝒓𝒓𝒆𝒄𝒕 𝒔𝒑𝒆𝒍𝒍𝒊𝒏𝒈"
 
-        await update.reply_text("𝙽𝙾 𝚁𝚎𝚜𝚞𝚕𝚝 𝙵𝚘𝚞𝚗𝚍 𝚈𝚘𝚞𝚛 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 \n𝑷𝒍𝒆𝒂𝒔𝒆 𝒄𝒉𝒆𝒄𝒌 𝒕𝒉𝒆 𝒔𝒑𝒆𝒍𝒍𝒊𝒏𝒈 𝒐𝒇 𝒎𝒐𝒗𝒊𝒆. 𝑼𝒔𝒆 𝑮𝒐𝒐𝒈𝒍𝒆 𝒕𝒐 𝒈𝒆𝒕 𝒄𝒐𝒓𝒓𝒆𝒄𝒕 𝒔𝒑𝒆𝒍𝒍𝒊𝒏𝒈", 
-
-                                reply_markup=InlineKeyboardMarkup(
+                                ,reply_markup=InlineKeyboardMarkup(
 
                                     [
 
@@ -142,6 +141,8 @@ async def auto_filter(bot, update):
                                                              )
 
                                          )
+
+        
 
     if len(results) == 0: # double check
         return
